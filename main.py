@@ -1,14 +1,12 @@
-def myfunc():
-  print ('sharath')
-  print ('sudha')
+from src.utilities.utility import objectutils 
 
+utl = objectutils()
 
-if __name__ == "__main__":
-    myfunc ()
+_add = utl.add(3,5)
 
-def factorial(n):
-  if n == 0:
-    return 1
-  else:
-    return n * factorial(n - 1)
-print(factorial(10))
+_sub = utl.sub(5, 2)
+
+print(_add)
+print(_sub)
+
+print(utl.sub(2,5))
